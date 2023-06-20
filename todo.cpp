@@ -27,6 +27,21 @@ int main(int argc, char* const argv[])
 		}
 		todos.push_back(todo);
 	}
+	else if (argc == 4 && argv[1] == std::string("swap"))
+	{
+		std::istringstream swapArg(argv[2]);
+		size_t from;
+		if (swapArg >> from && swapArg.eof() && from > 0 && from < todos.size() + 1)
+		{
+			swapArg.str(argv[3]);
+			swapArg.clear();
+			size_t to;
+			if (swapArg >> to && swapArg.eof() && to > 0 && to < todos.size() + 1)
+			{
+				std::swap(todos[from - 1], todos[to - 1]);
+			}
+		}
+	}
 	else if (argc == 3 && argv[1] == std::string("done"))
 	{
 		std::istringstream idArg(argv[2]);

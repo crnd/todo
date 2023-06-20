@@ -27,13 +27,23 @@ $ ./todo add Feed the dog
 4. Feed the dog
 ```
 
+To swap two todos with each other, run the toolwith arguments `swap <number of the first todo> <number of the second todo>`. If both todos can be found with the given numbers, the todos will be swapped and the list of todos will be printed.
+
+```
+$ ./todo swap 2 4
+1. Feed the cat
+2. Feed the dog
+3. Clean the floors
+4. Buy groceries
+```
+
 To mark a todo as done, run the tool with arguments `done <number of the todo>`. If a todo can be found with the given number, it will be removed from the list and the list of todos will be printed.
 
 ```
 $ ./todo done 2
 1. Feed the cat
 2. Clean the floors
-3. Feed the dog
+3. Buy groceries
 ```
 
 All invalid commands will be silently ignored.
