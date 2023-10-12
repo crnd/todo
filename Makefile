@@ -1,5 +1,5 @@
 app:
-	g++ -Os -Wall -Wextra todo.cpp -o todo
+	g++ -Os -s -Wall -Wextra todo.cpp -o todo
 
 clean:
 	rm todo
