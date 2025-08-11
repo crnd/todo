@@ -27,7 +27,7 @@ $ ./todo add Feed the dog
 4. Feed the dog
 ```
 
-To swap two todos with each other, run the toolwith arguments `swap <number of the first todo> <number of the second todo>`. If both todos can be found with the given numbers, the todos will be swapped and the list of todos will be printed.
+To swap two todos with each other, run the tool with arguments `swap <number of the first todo> <number of the second todo>`. If both todos can be found with the given numbers, the todos will be swapped and the list of todos will be printed.
 
 ```
 $ ./todo swap 2 4
